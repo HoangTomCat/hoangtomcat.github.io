@@ -1,0 +1,238 @@
+*{
+    font-family: 'Lexend Deca','Big Shoulders Display';
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width:1425px){
+    .container{ 
+        display: flex;
+        /* justify-content: flex-start; */
+        width: 100vw;
+        height: 610px;
+        border: 1px solid red;
+        padding-right: 110px;
+        padding-left: 110px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: hsl(0, 0%, 95%);
+    }
+/*Common Box*/
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: calc(100% / 3.0 - (40px*2) - 120px);
+        flex-basis: 375px;
+        padding: 50px;
+        border: 1px solid red;
+        color:hsl(0, 0%, 95%);
+        height: 450px;
+        margin-right: 40px;
+    }
+    .box-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box-header-title h1{
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+    }
+    .box-header-content{
+        width: 80%;
+    }
+    .box-header-content p{
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: calc(1em - 1px);
+        line-height: 23px;
+    }
+    .box-footer button{
+        padding: 10px;
+        border-radius: 12px;
+        border-color: transparent;
+        background-color: hsl(0, 0%, 95%);
+    }
+/*Box Sedans*/
+    .box-sedans{
+        background-color: hsl(31, 77%, 52%);
+    }
+    .box-sedans button{
+        color:hsl(31, 77%, 52%);
+    }
+
+    .box-suvs{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .box-suvs button{
+        color:hsl(184, 100%, 22%);
+    }
+
+    .box-luxury{
+        margin-right: 0;
+        background-color: hsl(179, 100%, 13%);
+    }
+    .box-luxury button{
+        color:hsl(179, 100%, 13%)
+    }
+}
+
+@media screen and (max-width:1425px) and (min-width:1010px){
+    
+    .container{ 
+        display: flex;    
+        flex-wrap: wrap;
+        width: 100vw;
+        min-width: 1010px;
+        height: 1100px;
+        border: 1px solid red;
+        padding-right: 110px;
+        padding-left: 110px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 375px;
+        height: 450px;
+        padding: 50px;
+        border: 1px solid red;
+        color: hsl(0, 0%, 95%);
+        margin-right: 40px;
+    }
+    .box-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box-header-title h1{
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+    }
+    .box-header-content{
+        width: 80%;
+    }
+    .box-header-content p{
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: calc(1em - 1px);
+        line-height: 23px;
+    }
+    .box-footer button{
+        padding: 10px;
+        border-radius: 12px;
+        border-color: transparent;
+        background-color: hsl(0, 0%, 95%);
+    }
+    /*Box Sedans*/
+    .box-sedans{
+        flex: calc(50% - 40px);
+        background-color: hsl(31, 77%, 52%);
+    }
+    .box-sedans button{
+        color:hsl(31, 77%, 52%);
+    }
+    
+    .box-suvs{
+        flex: calc(50% - 40px);
+        background-color: hsl(184, 100%, 22%);
+        margin-right: 0;
+    }
+    .box-suvs button{
+        color:hsl(184, 100%, 22%);
+    }
+    
+    .box-luxury{
+        flex: 100%;
+        background-color: hsl(179, 100%, 13%);
+        margin-right:0;
+        margin-top: 40px;
+    }
+    .box-luxury button{
+        color:hsl(179, 100%, 13%)
+    }
+}
+@media screen and (max-width:1010px){
+
+    .container{ 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        min-width: 595px;
+        height: 1590px;
+        border: 1px solid red;
+        padding-right: 110px;
+        padding-left: 110px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+        flex-basis: 375px;
+        height: 450px;
+        padding: 50px;
+        border: 1px solid red;
+        color:hsl(0, 0%, 95%);
+        margin-bottom: 40px;
+    }
+    .box-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box-header-title h1{
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+    }
+    .box-header-content{
+        width: 80%;
+    }
+    .box-header-content p{
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: calc(1em - 1px);
+        line-height: 23px;
+    }
+    .box-footer button{
+        padding: 10px;
+        border-radius: 12px;
+        border-color: transparent;
+        background-color: hsl(0, 0%, 95%);
+    }
+    /*Box Sedans*/
+    
+    .box-sedans{
+        flex: 100%;
+        background-color: hsl(31, 77%, 52%);
+        margin-right:0;
+    }
+    .box-sedans button{
+        color:hsl(31, 77%, 52%);
+    }
+    
+    .box-suvs{
+        flex: 100%;
+        background-color: hsl(184, 100%, 22%);
+    }
+    .box-suvs button{
+        color: hsl(184, 100%, 22%);
+    }
+    
+    .box-luxury{
+        flex: 100%;
+        background-color: hsl(179, 100%, 13%);
+        margin: 0
+    }
+    .box-luxury button{
+        color: hsl(179, 100%, 13%)
+    }
+}
+
